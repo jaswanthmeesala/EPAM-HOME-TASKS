@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+header{
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    background-color: rgb(22, 20, 56);
+}
+h4{
+    padding: 1px;
+}
+#a{
+    background-color: white;
+    height: 30px;
+    width: 250px;
+    margin-top: 20px;
+    border: 1px solid;
+    border-radius: 1px;
+    border-color: red;
+}
+#sub{
+    font-size: xx-small;
+    font-weight:bold;
+}
+#d1{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid black;
+}
+#mid{
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+#subs{
+    color: white;
+    background-color: black;
+}
+#an{
+    font-size: x-large;
+    font-weight: bold;
+}
+.art{
+    display: flex;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(173, 173, 173);
+    padding-bottom: 20px;
+}
+.img{
+    width: max-content;
+    margin-right: 40px;
+}
+#hr1{
+    border-top: 1px solid rgb(110, 109, 109);
+}
+.p{
+    font-size: x-small;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.b{
+    color: white;
+    background-color: orangered;
+    border-color: white;
+    height: 30px;
+    width: max-content;
+    font-size: x-small;
+    padding: 5px;
+}
+@media only screen and (max-width:800px) {
+    .art{
+        display: block;
+    }
+    .bn{
+        font-size: x-small;
+    }
+    input{
+        width: 100px;
+    }
+    #subs{
+        width: 50px;
+    }
+    
+    #kk{
+        width: 50px;
+    }
+}
+@media only screen and (max-width:650px){
+    #mid{
+        margin-left: 100px;
+        width: 200px;
+    }
+    #an{
+        font-size: medium;
+    }
+}
