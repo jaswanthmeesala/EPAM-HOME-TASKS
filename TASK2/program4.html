@@ -5,25 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Program 4</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: cursive;
+        }
+    </style>
     <script>
-        function rentalCarCost(d)
+        function fun()
         {
+            let d=document.getElementById("input").value;
             if(d<3)
             {
-                return d*40;
+                document.getElementById("output").innerHTML="Amount you have to pay = "+(d*40);
             }
             else if(d>=3 && d<7)
             {
-                return (d*40)-20;
+                document.getElementById("output").innerHTML="Amount you have to pay = "+((d*40)-20);
             }
             else
             {
-                return (d*40)-50;
+                document.getElementById("output").innerHTML="Amount you have to pay = "+((d*40)-50);
             }
         }
     </script>
 </head>
 <body>
-    
+    <h1>Number of days you Rented a Car ?</h1>
+    <input type="number" id="input">
+    <input type="submit" value="Find" onclick="fun()">
+    <h3 id="output"></h3>
 </body>
 </html>

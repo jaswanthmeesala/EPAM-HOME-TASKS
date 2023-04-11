@@ -5,14 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Program 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: cursive;
+        }
+    </style>
     <script>
-        function opposite(number)
+        function fun()
         {
-            return number*-1;
+            document.getElementById("output").innerHTML=document.getElementById("input").value*-1;
         }
     </script>
 </head>
 <body>
-    
+    <h1>Enter a number</h1>
+    <input type="number" id="input">
+    <input type="submit" value="Submit" onclick="fun()">
+    <h3 id="output"></h3>
 </body>
 </html>
