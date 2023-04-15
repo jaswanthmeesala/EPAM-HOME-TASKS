@@ -5,36 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Program 3</title>
-    <style>
-        *{
-            padding: 0;
-            margin: 0;
-            font-family: cursive;
-        }
-    </style>
-    <script>
-        let operation;
-        function op(op)
-        {
-            operation=op;
-        }
-        function fun()
-        {
-            let value1=parseInt(document.getElementById("val1").value);
-            let value2=parseInt(document.getElementById("val2").value);
-            switch(operation)
-            {
-                case '+': document.getElementById("output").innerHTML="Result = "+(value1+value2);
-                        break;
-                case '-': document.getElementById("output").innerHTML="Result = "+(value1-value2);
-                        break;
-                case '*': document.getElementById("output").innerHTML="Result = "+(value1*value2);
-                        break;
-                case '/': document.getElementById("output").innerHTML="Result = "+(value1/value2);
-                        break;
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="program3.css">
+    <script src="program3.js"></script>
 </head>
 <body>
     <h1>Enter 2 Numbers & 1 Operator</h1>
